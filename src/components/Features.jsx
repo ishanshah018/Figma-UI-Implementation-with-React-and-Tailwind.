@@ -5,22 +5,22 @@ import shieldImage from '../assets/shield.png';
 
 const Features = () => {
   return (
-    <section className="py-20 why-choose-section">
+    <section className="py-12 sm:py-20 why-choose-section">
       <div className="mx-auto max-w-6xl px-4">
-        <div className="text-center space-y-4 mb-16">
+        <div className="text-center space-y-4 mb-12 sm:mb-16">
           <div className="section-badge">
             Features
           </div>
-          <h2 className="section-title">
+          <h2 className="section-title px-4">
             Why <span className="text-purple-gradient">choose</span> us
           </h2>
-          <p className="section-subtitle">
+          <p className="section-subtitle px-4">
             We are the only service that provides all 3 services as 
             a packaged service
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
           {/* Left side - Timeline */}
           <div className="features-timeline order-2 lg:order-1">
             <div className="timeline-line"></div>
@@ -165,13 +165,13 @@ const Features = () => {
           </div>
 
           {/* Right side - Visual mockups */}
-          <div className="space-y-8 order-1 lg:order-2">
+          <div className="space-y-6 sm:space-y-8 order-1 lg:order-2">
             {/* Protect Personal Information Visual */}
-            <div className="mockup-container flex items-center justify-center">
+            <div className="mockup-container flex items-center justify-center p-4">
               <img 
                 src={protectImage} 
                 alt="Protect Personal Information" 
-                className="w-full h-auto max-w-md object-contain"
+                className="w-full h-auto max-w-xs sm:max-w-md object-contain"
                 style={{
                   filter: 'drop-shadow(0 10px 30px rgba(67, 73, 255, 0.3))'
                 }}
@@ -179,11 +179,11 @@ const Features = () => {
             </div>
 
             {/* Detailed Reporting Visual */}
-            <div className="mockup-container flex items-center justify-center">
+            <div className="mockup-container flex items-center justify-center p-4">
               <img 
                 src={reportingImage} 
                 alt="Detailed Reporting" 
-                className="w-full h-auto max-w-md object-contain"
+                className="w-full h-auto max-w-xs sm:max-w-md object-contain"
                 style={{
                   filter: 'drop-shadow(0 10px 30px rgba(139, 92, 246, 0.3))'
                 }}
@@ -191,11 +191,11 @@ const Features = () => {
             </div>
 
             {/* Secure All Data Visual */}
-            <div className="mockup-container flex items-center justify-center">
+            <div className="mockup-container flex items-center justify-center p-4">
               <img 
                 src={shieldImage} 
                 alt="Secure All Data" 
-                className="w-full h-auto max-w-md object-contain"
+                className="w-full h-auto max-w-xs sm:max-w-md object-contain"
                 style={{
                   filter: 'drop-shadow(0 10px 30px rgba(34, 197, 94, 0.3))'
                 }}

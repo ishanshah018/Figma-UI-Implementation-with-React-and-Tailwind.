@@ -3,14 +3,14 @@ import React from 'react';
 const Services = () => {
   return (
     <section 
-      className="section"
+      className="py-12 sm:py-20"
       style={{
         background: 'linear-gradient(135deg, #16213E 0%, #1A1A2E 50%, #0A0A0F 100%)'
       }}
     >
-      <div className="container">
+      <div className="container mx-auto px-4">
         {/* Section header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 sm:mb-16">
           <div 
             className="inline-flex items-center justify-center text-sm text-gray-300 mb-6"
             style={{
@@ -27,13 +27,14 @@ const Services = () => {
             Services
           </div>
           <h2 
-            className="mb-4"
+            className="mb-4 px-4"
             style={{
-              width: '430px',
-              height: '96px',
+              width: '100%',
+              maxWidth: '430px',
+              height: 'auto',
               fontFamily: 'Sora',
               fontWeight: 600,
-              fontSize: '40px',
+              fontSize: 'clamp(28px, 6vw, 40px)',
               lineHeight: '120%',
               letterSpacing: '0%',
               textAlign: 'center',
@@ -57,20 +58,22 @@ const Services = () => {
               }}
             >Data</span>
           </h2>
-          <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-400 max-w-2xl mx-auto px-4">
             Make your data invisible by generating unlimited identities. The next-level in privacy protection for online and travel.
           </p>
         </div>
 
-        {/* Services grid */}
-        <div className="grid md:grid-cols-3 gap-8">
+        {/* Services grid - responsive */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {/* Personal Information removal */}
-          <div className="group relative">
+          <div className="group relative mx-auto">
             <div 
-              className="relative p-8 hover:scale-105 transition-all duration-300"
+              className="relative p-6 sm:p-8 hover:scale-105 transition-all duration-300"
               style={{
-                width: '424px',
-                height: '370px',
+                width: '100%',
+                maxWidth: '424px',
+                height: 'auto',
+                minHeight: '370px',
                 borderRadius: '32px',
                 border: '2px solid',
                 borderImage: 'linear-gradient(87.95deg, rgba(9, 14, 219, 0.66) -15.78%, rgba(231, 61, 196, 0.66) 102.06%) 1',
@@ -102,12 +105,14 @@ const Services = () => {
           </div>
 
           {/* Cloaking Alias Profiles */}
-          <div className="group relative">
+          <div className="group relative mx-auto">
             <div 
-              className="relative p-8 hover:scale-105 transition-all duration-300"
+              className="relative p-6 sm:p-8 hover:scale-105 transition-all duration-300"
               style={{
-                width: '424px',
-                height: '370px',
+                width: '100%',
+                maxWidth: '424px',
+                height: 'auto',
+                minHeight: '370px',
                 borderRadius: '32px',
                 border: '2px solid',
                 borderImage: 'linear-gradient(87.95deg, rgba(9, 14, 219, 0.66) -15.78%, rgba(231, 61, 196, 0.66) 102.06%) 1',
@@ -139,12 +144,14 @@ const Services = () => {
           </div>
 
           {/* Virtual identities Security */}
-          <div className="group relative">
+          <div className="group relative mx-auto">
             <div 
-              className="relative p-8 hover:scale-105 transition-all duration-300"
+              className="relative p-6 sm:p-8 hover:scale-105 transition-all duration-300"
               style={{
-                width: '424px',
-                height: '370px',
+                width: '100%',
+                maxWidth: '424px',
+                height: 'auto',
+                minHeight: '370px',
                 borderRadius: '32px',
                 border: '2px solid',
                 borderImage: 'linear-gradient(87.95deg, rgba(9, 14, 219, 0.66) -15.78%, rgba(231, 61, 196, 0.66) 102.06%) 1',

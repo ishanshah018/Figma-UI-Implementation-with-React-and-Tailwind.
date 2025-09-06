@@ -47,9 +47,9 @@ const Footer = () => {
 
   return (
     <footer className="bg-dark-900 border-t border-gray-800">
-      <div className="container">
-        <div className="py-12">
-          <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center space-y-8 lg:space-y-0">
+      <div className="container mx-auto px-4">
+        <div className="py-8 sm:py-12">
+          <div className="flex flex-col lg:flex-row justify-between items-center space-y-6 lg:space-y-0">
             {/* Brand */}
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-gradient-button rounded-lg flex items-center justify-center">
@@ -59,7 +59,7 @@ const Footer = () => {
             </div>
 
             {/* Links */}
-            <div className="flex flex-wrap gap-8 text-sm">
+            <div className="flex flex-wrap justify-center gap-4 sm:gap-8 text-sm">
               {footerLinks.company.map((link, index) => (
                 <a
                   key={index}
@@ -87,9 +87,9 @@ const Footer = () => {
           </div>
 
           {/* Bottom */}
-          <div className="border-t border-gray-800 pt-8 mt-8">
+          <div className="border-t border-gray-800 pt-6 sm:pt-8 mt-6 sm:mt-8">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-400 text-sm text-center md:text-left">
                 © {new Date().getFullYear()} IdentityHub. All rights reserved.
               </p>
             </div>

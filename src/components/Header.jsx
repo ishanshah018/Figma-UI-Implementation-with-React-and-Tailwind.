@@ -14,11 +14,9 @@ const Header = () => {
 
   return (
     <header 
-      className="fixed top-0 left-0 right-0 z-50 bg-dark-900/80 backdrop-blur-sm border-b border-gray-800"
+      className="fixed top-0 left-0 right-0 z-50 bg-dark-900/80 backdrop-blur-sm border-b border-gray-800 w-full"
       style={{
-        width: '1920px',
-        height: '80px',
-        maxWidth: '100vw'
+        height: '80px'
       }}
     >
       <nav className="container mx-auto px-4">

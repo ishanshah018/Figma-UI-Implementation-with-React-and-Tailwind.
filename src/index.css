@@ -11,15 +11,29 @@
   body {
     @apply bg-dark-900 text-white font-sans;
     font-feature-settings: "rlig" 1, "calt" 1;
+    overflow-x: hidden;
   }
   
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
   
   /* Remove default margin and padding */
   h1, h2, h3, h4, h5, h6, p {
     @apply m-0;
+  }
+
+  /* Responsive container */
+  .container {
+    @apply mx-auto px-4 sm:px-6 lg:px-8;
+    max-width: 1200px;
+    width: 100%;
+  }
+
+  /* Prevent horizontal scroll */
+  * {
+    box-sizing: border-box;
   }
 }
 
