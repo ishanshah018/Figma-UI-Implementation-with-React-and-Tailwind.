@@ -94,7 +94,26 @@ return (
           }}
         >
           <span style={{color: '#F33CC0'}}>Identity-hub is a better way to</span><br />
-          <span style={{color: '#4349FF'}}>achieve</span> <span style={{color: '#4349FF'}} className="underline decoration-2">privacy</span>
+          <span style={{color: '#4349FF'}}>achieve</span> <span 
+            style={{
+              color: '#4349FF',
+              position: 'relative',
+              display: 'inline-block'
+            }}
+          >
+            privacy
+            <span 
+              style={{
+                position: 'absolute',
+                bottom: '-4px',
+                left: '0',
+                right: '0',
+                height: '3px',
+                background: 'linear-gradient(90deg, #4349FF 0%, #F33CC0 100%)',
+                borderRadius: '2px'
+              }}
+            ></span>
+          </span>
         </h1>
 
         {/* Subheading - responsive */}
@@ -113,9 +132,9 @@ return (
         </p>
 
         {/* CTA Buttons - responsive */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8 sm:mb-16 px-4">
+        <div className="flex flex-col sm:flex-row justify-center mb-8 sm:mb-16 px-4 gap-4 sm:gap-2">
           <button 
-            className="inline-flex items-center justify-center text-white transition-all duration-300 hover:scale-105 relative w-full sm:w-auto"
+            className="inline-flex items-center justify-center text-white transition-all duration-300 hover:scale-105 relative w-full sm:w-auto mx-auto sm:mx-0"
             style={{
               width: '100%',
               maxWidth: '150px',
@@ -127,14 +146,13 @@ return (
               backgroundOrigin: 'border-box',
               backgroundClip: 'content-box, border-box',
               fontSize: '16px',
-              fontWeight: '600',
-              margin: '0 auto'
+              fontWeight: '600'
             }}
           >
             Start free trial
           </button>
           <button 
-            className="inline-flex items-center justify-center text-white transition-all duration-300 hover:scale-105 w-full sm:w-auto"
+            className="inline-flex items-center justify-center text-white transition-all duration-300 hover:scale-105 w-full sm:w-auto mx-auto sm:mx-0"
             style={{
               width: '100%',
               maxWidth: '150px',
@@ -143,8 +161,7 @@ return (
               background: 'linear-gradient(90deg, #4F46E5 0%, #7C3AED 50%, #EC4899 100%)',
               border: 'none',
               fontSize: '16px',
-              fontWeight: '600',
-              margin: '0 auto'
+              fontWeight: '600'
             }}
           >
             Use it Now

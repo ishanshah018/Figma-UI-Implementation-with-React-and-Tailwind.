@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../assets/logo.png';
 
 const Footer = () => {
   const footerLinks = {
@@ -51,11 +52,36 @@ const Footer = () => {
         <div className="py-8 sm:py-12">
           <div className="flex flex-col lg:flex-row justify-between items-center space-y-6 lg:space-y-0">
             {/* Brand */}
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-button rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">I</span>
-              </div>
-              <span className="text-white font-bold text-lg">IdentityHub</span>
+            <div 
+              className="flex items-center"
+              style={{
+                width: '196px',
+                height: '32px',
+                gap: '8px'
+              }}
+            >
+              <img 
+                src={logo} 
+                alt="IdentityHub Logo" 
+                style={{
+                  width: '32px',
+                  height: '32px'
+                }}
+              />
+              <span 
+                style={{
+                  width: '156px',
+                  height: '24px',
+                  fontFamily: 'Source Code Pro',
+                  fontWeight: 700,
+                  fontSize: '24px',
+                  lineHeight: '100%',
+                  letterSpacing: '-0.27px',
+                  color: '#CAD1E9'
+                }}
+              >
+                IdentityHub
+              </span>
             </div>
 
             {/* Links */}
