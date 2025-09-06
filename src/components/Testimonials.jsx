@@ -1,50 +1,173 @@
 import React from 'react';
+import manImage from '../assets/man.png';
 
 const Testimonials = () => {
   return (
-    <section className="section bg-dark-900" id="testimonials">
-      <div className="container">
+    <section 
+      className="py-20"
+      style={{
+        background: 'linear-gradient(135deg, #0A0A0F 0%, #1A1A2E 50%, #16213E 100%)',
+        minHeight: '100vh',
+        display: 'flex',
+        alignItems: 'center'
+      }}
+    >
+      <div className="container mx-auto px-4">
         <div className="text-center space-y-4 mb-16">
-          <div className="inline-block text-sm text-gray-400 uppercase tracking-wider mb-4">
-            TESTIMONIALS
+          <div 
+            className="inline-flex items-center justify-center text-sm text-gray-300 mb-6"
+            style={{
+              width: '84px',
+              height: '26px',
+              gap: '10px',
+              borderRadius: '38px',
+              border: '1px solid',
+              borderImage: 'linear-gradient(87.49deg, #090EDB 32.4%, #8D1EA2 90.21%) 1',
+              background: '#0F0B15',
+              boxShadow: '0px 4px 50px 0px rgba(159, 100, 239, 0.4), inset 0px 0px 12px 0px rgba(255, 255, 255, 0.2)'
+            }}
+          >
+            Testimonials
           </div>
-          <h2 className="heading-section text-white">
-            What's our user <span className="text-purple-gradient">says</span>
+          <h2 
+            className="mb-4"
+            style={{
+              fontFamily: 'Sora',
+              fontWeight: 600,
+              fontSize: '40px',
+              lineHeight: '120%',
+              letterSpacing: '0%',
+              textAlign: 'center',
+              color: 'white'
+            }}
+          >
+            What's our user <span 
+              style={{
+                fontFamily: 'Sora',
+                fontWeight: 600,
+                fontSize: '40px',
+                lineHeight: '120%',
+                letterSpacing: '0%',
+                background: 'linear-gradient(90deg, #4F46E5, #7C3AED, #EC4899)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text'
+              }}
+            >says</span>
             <br />
             about us
           </h2>
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          <div className="card-dark text-center">
-            <div className="space-y-6">
+        <div className="max-w-6xl mx-auto relative">
+          {/* Navigation Arrows */}
+          <button 
+            className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
+            style={{
+              background: 'linear-gradient(90deg, #4F46E5, #7C3AED, #EC4899)',
+              border: 'none'
+            }}
+          >
+            <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          
+          <button 
+            className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
+            style={{
+              background: 'linear-gradient(90deg, #4F46E5, #7C3AED, #EC4899)',
+              border: 'none'
+            }}
+          >
+            <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+
+          {/* Testimonial Card */}
+          <div 
+            className="mx-16 p-12 text-left"
+            style={{
+              background: 'rgba(30, 30, 50, 0.6)',
+              border: '1px solid rgba(255, 255, 255, 0.1)',
+              borderRadius: '24px',
+              backdropFilter: 'blur(20px)'
+            }}
+          >
+            <div className="flex items-start space-x-6">
               {/* User Avatar */}
-              <div className="flex justify-center">
-                <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center">
-                  <span className="text-white text-xl font-bold">DK</span>
+              <div className="flex-shrink-0">
+                <div 
+                  className="w-16 h-16 rounded-full flex items-center justify-center overflow-hidden"
+                  style={{
+                    background: 'linear-gradient(135deg, #4F46E5, #7C3AED)',
+                    border: '2px solid rgba(255, 255, 255, 0.2)'
+                  }}
+                >
+                  <img 
+                    src={manImage} 
+                    alt="David J. Karem" 
+                    className="w-full h-full object-cover rounded-full"
+                  />
                 </div>
               </div>
 
-              {/* User Info */}
-              <div>
-                <h3 className="text-xl font-bold text-white">David J. Karem</h3>
-                <p className="text-gray-400">Team manager • 1 day ago</p>
-              </div>
+              {/* Content */}
+              <div className="flex-1">
+                {/* User Info */}
+                <div className="mb-6">
+                  <h3 
+                    className="text-white mb-1"
+                    style={{
+                      fontFamily: 'Sora',
+                      fontWeight: 600,
+                      fontSize: '24px',
+                      lineHeight: '130%'
+                    }}
+                  >
+                    David J. Karem
+                  </h3>
+                  <p 
+                    className="text-gray-400"
+                    style={{
+                      fontFamily: 'Poppins',
+                      fontWeight: 400,
+                      fontSize: '16px',
+                      lineHeight: '150%'
+                    }}
+                  >
+                    Businessmen • 1 day ago
+                  </p>
+                </div>
 
-              {/* Testimonial Text */}
-              <blockquote className="text-gray-300 text-lg leading-relaxed max-w-3xl mx-auto">
-                "Forget about spam, advertising mailings, hacking and attacking robots. Keep your real mailbox clean and secure. Temp 
-                Mail provides temporary, secure, anonymous, free, disposable email address. Stalkers and disgruntled acquaintances 
-                can use the internet to find addresses, phone numbers and other personal details about their targets. Identity thieves use 
-                personal information numbers and other personal details."
-              </blockquote>
-
-              {/* Navigation dots */}
-              <div className="flex justify-center space-x-2 pt-6">
-                <button className="w-3 h-3 bg-purple-500 rounded-full"></button>
-                <button className="w-3 h-3 bg-gray-600 rounded-full"></button>
-                <button className="w-3 h-3 bg-gray-600 rounded-full"></button>
+                {/* Testimonial Text */}
+                <blockquote 
+                  className="text-gray-300 leading-relaxed"
+                  style={{
+                    fontFamily: 'Poppins',
+                    fontWeight: 400,
+                    fontSize: '18px',
+                    lineHeight: '160%',
+                    letterSpacing: '0.02em'
+                  }}
+                >
+                  Forget about spam, advertising mailings, hacking and attacking robots. Keep your real mailbox clean and secure. Temp Mail provides temporary, secure, anonymous, free, disposable email address. Stalkers and disgruntled acquaintances use the Internet to find addresses, phone numbers and other personal details about their targets. Identity thieves use personal information numbers and other personal details.
+                </blockquote>
               </div>
+            </div>
+
+            {/* Navigation dots */}
+            <div className="flex justify-center space-x-3 mt-8">
+              <button className="w-3 h-3 bg-gray-500 rounded-full opacity-60"></button>
+              <button 
+                className="w-3 h-3 rounded-full"
+                style={{
+                  background: 'linear-gradient(90deg, #4F46E5, #7C3AED, #EC4899)'
+                }}
+              ></button>
+              <button className="w-3 h-3 bg-gray-500 rounded-full opacity-60"></button>
+              <button className="w-3 h-3 bg-gray-500 rounded-full opacity-60"></button>
             </div>
           </div>
         </div>
