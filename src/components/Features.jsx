@@ -5,7 +5,7 @@ import shieldImage from '../assets/shield.png';
 
 const Features = () => {
   return (
-    <section className="py-12 sm:py-20 why-choose-section">
+    <section id="features" className="py-12 sm:py-20 why-choose-section">
       <div className="mx-auto max-w-6xl px-4">
         <div className="text-center space-y-4 mb-12 sm:mb-16">
           <div className="section-badge">

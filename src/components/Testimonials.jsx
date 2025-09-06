@@ -4,6 +4,7 @@ import manImage from '../assets/man.png';
 const Testimonials = () => {
   return (
     <section 
+      id="testimonials"
       className="py-12 sm:py-20"
       style={{
         background: 'linear-gradient(135deg, #0A0A0F 0%, #1A1A2E 50%, #16213E 100%)',

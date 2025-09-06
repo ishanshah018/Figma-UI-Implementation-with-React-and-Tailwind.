@@ -3,6 +3,7 @@ import React from 'react';
 const Services = () => {
   return (
     <section 
+      id="services"
       className="py-12 sm:py-20"
       style={{
         background: 'linear-gradient(135deg, #16213E 0%, #1A1A2E 50%, #0A0A0F 100%)'
