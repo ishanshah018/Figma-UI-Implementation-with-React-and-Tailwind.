@@ -78,19 +78,31 @@ const Header = () => {
                 height: '40px',
                 gap: '6px',
                 borderRadius: '12px',
-                border: '1px solid rgba(255, 255, 255, 0.2)',
+                border: '1px solid rgba(255, 255, 255, 0.08)',
                 paddingTop: '10px',
                 paddingRight: '20px',
                 paddingBottom: '10px',
                 paddingLeft: '20px',
-                background: 'rgba(255, 255, 255, 0.1)',
+                background: 'rgba(255, 255, 255, 0.004)',
                 backdropFilter: 'blur(48px)',
-                boxShadow: 'inset 0px 0px 12px 0px rgba(255, 255, 255, 0.3)',
+                boxShadow: 'inset 0px 0px 12px 0px rgba(255, 255, 255, 0.2)',
                 fontSize: '14px',
                 fontWeight: '500'
               }}
             >
               Start free trial
+              <svg 
+                width="12" 
+                height="12" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                stroke="currentColor" 
+                strokeWidth="2" 
+                strokeLinecap="round" 
+                strokeLinejoin="round"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
             </button>
           </div>
 
