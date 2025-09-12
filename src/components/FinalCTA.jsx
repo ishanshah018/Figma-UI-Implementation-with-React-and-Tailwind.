@@ -2,7 +2,7 @@ import React from 'react';
 
 const FinalCTA = () => {
   return (
-    <section className="py-12 sm:py-20 bg-dark-900">
+    <section className="ocean-section py-12 sm:py-20 bg-dark-900">
       <div className="container mx-auto px-4 text-center">
         <div className="space-y-6 sm:space-y-8 max-w-3xl mx-auto">
           <h2 

@@ -53,7 +53,7 @@ const Footer = () => {
           <div className="flex flex-col lg:flex-row justify-between items-center space-y-6 lg:space-y-0">
             {/* Brand */}
             <div 
-              className="flex items-center"
+              className="navbar-logo flex items-center"
               style={{
                 width: '196px',
                 height: '32px',
@@ -63,12 +63,14 @@ const Footer = () => {
               <img 
                 src={logo} 
                 alt="IdentityHub Logo" 
+                className="logo-image"
                 style={{
                   width: '32px',
                   height: '32px'
                 }}
               />
               <span 
+                className="logo-text"
                 style={{
                   width: '156px',
                   height: '24px',
@@ -85,12 +87,12 @@ const Footer = () => {
             </div>
 
             {/* Links */}
-            <div className="flex flex-wrap justify-center gap-4 sm:gap-8 text-sm">
+            <div className="flex flex-wrap justify-center gap-2 sm:gap-4 text-sm">
               {footerLinks.company.map((link, index) => (
                 <a
                   key={index}
                   href="#"
-                  className="text-gray-400 hover:text-white transition-colors duration-200 uppercase tracking-wider"
+                  className="footer-link text-gray-400 transition-colors duration-200 uppercase tracking-wider"
                 >
                   {link}
                 </a>
@@ -98,12 +100,12 @@ const Footer = () => {
             </div>
 
             {/* Social Links */}
-            <div className="flex space-x-4">
+            <div className="flex space-x-2">
               {socialLinks.map((social) => (
                 <a
                   key={social.name}
                   href={social.href}
-                  className="text-gray-400 hover:text-white transition-colors duration-200"
+                  className="footer-social text-gray-400 transition-colors duration-200"
                   aria-label={social.name}
                 >
                   {social.icon}

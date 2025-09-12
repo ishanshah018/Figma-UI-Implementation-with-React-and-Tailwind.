@@ -134,35 +134,12 @@ return (
         {/* CTA Buttons - responsive */}
         <div className="flex flex-col sm:flex-row justify-center mb-8 sm:mb-16 px-4 gap-4 sm:gap-2">
           <button 
-            className="inline-flex items-center justify-center text-white transition-all duration-300 hover:scale-105 relative w-full sm:w-auto mx-auto sm:mx-0"
-            style={{
-              width: '100%',
-              maxWidth: '150px',
-              height: '48px',
-              borderRadius: '15px',
-              background: 'rgba(30, 30, 50, 0.8)',
-              border: '2px solid transparent',
-              backgroundImage: 'linear-gradient(rgba(30, 30, 50, 0.8), rgba(30, 30, 50, 0.8)), linear-gradient(90deg, #4F46E5, #7C3AED, #EC4899)',
-              backgroundOrigin: 'border-box',
-              backgroundClip: 'content-box, border-box',
-              fontSize: '16px',
-              fontWeight: '600'
-            }}
+            className="btn btn-outline btn-md w-full sm:w-auto max-w-[150px] mx-auto sm:mx-0"
           >
             Start free trial
           </button>
           <button 
-            className="inline-flex items-center justify-center text-white transition-all duration-300 hover:scale-105 w-full sm:w-auto mx-auto sm:mx-0"
-            style={{
-              width: '100%',
-              maxWidth: '150px',
-              height: '48px',
-              borderRadius: '15px',
-              background: 'linear-gradient(90deg, #4F46E5 0%, #7C3AED 50%, #EC4899 100%)',
-              border: 'none',
-              fontSize: '16px',
-              fontWeight: '600'
-            }}
+            className="btn btn-gradient btn-md w-full sm:w-auto max-w-[150px] mx-auto sm:mx-0"
           >
             Use it Now
           </button>

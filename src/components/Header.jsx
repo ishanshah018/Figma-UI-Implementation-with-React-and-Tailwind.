@@ -23,7 +23,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div 
-            className="flex items-center"
+            className="navbar-logo flex items-center"
             style={{
               width: '196px',
               height: '32px',
@@ -33,12 +33,14 @@ const Header = () => {
             <img 
               src={logo} 
               alt="IdentityHub Logo" 
+              className="logo-image"
               style={{
                 width: '32px',
                 height: '32px'
               }}
             />
             <span 
+              className="logo-text"
               style={{
                 width: '156px',
                 height: '24px',
@@ -55,12 +57,12 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-2">
             {navigation.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="text-gray-300 hover:text-white transition-colors duration-200 text-sm"
+                className="navbar-link text-gray-300 transition-colors duration-200 text-sm relative"
               >
                 {item.name}
               </a>
@@ -70,7 +72,7 @@ const Header = () => {
           {/* Desktop CTA */}
           <div className="hidden lg:block">
             <button 
-              className="inline-flex items-center justify-center text-white transition-all duration-300 hover:scale-105"
+              className="navbar-cta inline-flex items-center justify-center text-white transition-all duration-300"
               style={{
                 width: '155px',
                 height: '40px',
@@ -88,7 +90,7 @@ const Header = () => {
                 fontWeight: '500'
               }}
             >
-              Start free trial
+              <span>Start free trial</span>
               <svg 
                 width="12" 
                 height="12" 
@@ -98,6 +100,7 @@ const Header = () => {
                 strokeWidth="2" 
                 strokeLinecap="round" 
                 strokeLinejoin="round"
+                className="transition-transform duration-300 group-hover:translate-x-1"
               >
                 <path d="M5 12h14M12 5l7 7-7 7"/>
               </svg>
@@ -129,7 +132,7 @@ const Header = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="block px-3 py-2 text-gray-300 hover:text-white hover:bg-gray-700 rounded-md transition-colors duration-200"
+                  className="mobile-nav-link block px-3 py-2 text-gray-300 hover:text-white rounded-md transition-colors duration-200"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.name}

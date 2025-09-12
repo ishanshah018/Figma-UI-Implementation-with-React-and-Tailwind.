@@ -51,7 +51,7 @@ const Pricing = () => {
   ];
 
   return (
-    <section className="section bg-dark-900" id="pricing">
+    <section className="ocean-section section bg-dark-900" id="pricing">
       <div className="container">
         <div className="text-center space-y-4 mb-16">
           <div className="inline-block text-sm text-gray-400 uppercase tracking-wider mb-4">
@@ -71,15 +71,15 @@ const Pricing = () => {
               <div className="space-y-6">
                 {/* Plan Name */}
                 <div>
-                  <h3 className="text-xl font-bold text-white mb-2">{plan.name}</h3>
-                  <p className="text-gray-400 text-sm">{plan.description}</p>
+                  <h3 className="text-xl font-bold text-white mb-2 transition-all duration-300 group-hover:text-purple-300">{plan.name}</h3>
+                  <p className="text-gray-400 text-sm transition-all duration-300 group-hover:text-gray-300">{plan.description}</p>
                 </div>
 
                 {/* Price */}
                 <div className="space-y-2">
                   <div className="flex items-baseline">
-                    <span className="text-gray-400 text-lg">$</span>
-                    <span className="text-4xl font-bold text-white">{plan.price}</span>
+                    <span className="text-gray-400 text-lg transition-all duration-300 group-hover:text-purple-400">$</span>
+                    <span className="text-4xl font-bold text-white price-number">{plan.price}</span>
                   </div>
                 </div>
 
@@ -89,24 +89,15 @@ const Pricing = () => {
                 </button>
 
                 {/* Features */}
-                <div className="space-y-3 pt-4 border-t border-gray-700">
+                <div className="space-y-3 pt-4 border-t border-gray-700 transition-all duration-300 group-hover:border-gray-600">
                   {plan.features.map((feature, featureIndex) => (
-                    <div key={featureIndex} className="flex items-center space-x-3">
-                      <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
-                      <span className="text-gray-300 text-sm">{feature}</span>
+                    <div key={featureIndex} className="flex items-center space-x-3 feature-item">
+                      <div className="w-2 h-2 bg-purple-500 rounded-full feature-bullet"></div>
+                      <span className="text-gray-300 text-sm transition-all duration-300 group-hover:text-gray-200">{feature}</span>
                     </div>
                   ))}
                 </div>
               </div>
-
-              {/* Popular badge */}
-              {plan.popular && (
-                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                  <div className="bg-gradient-button text-white px-4 py-1 rounded-full text-sm font-medium">
-                    Most Popular
-                  </div>
-                </div>
-              )}
             </div>
           ))}
         </div>
