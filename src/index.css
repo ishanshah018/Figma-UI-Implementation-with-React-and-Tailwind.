@@ -103,6 +103,32 @@
     box-shadow: 0 8px 25px rgba(108, 92, 231, 0.4), 0 4px 15px rgba(232, 67, 147, 0.3);
     background: linear-gradient(135deg, #7C6EE8 0%, #F055A4 100%);
   }
+
+  /* Prevent scaling on mobile devices */
+  @media (max-width: 768px) {
+    .btn-gradient:hover {
+      transform: translateY(-2px) scale(1);
+    }
+  }
+
+  /* Comprehensive mobile hover prevention */
+  @media (hover: none) and (pointer: coarse) {
+    .btn:hover {
+      transform: none !important;
+    }
+    .btn-primary:hover {
+      transform: none !important;
+    }
+    .btn-gradient:hover {
+      transform: none !important;
+    }
+    .btn-secondary:hover {
+      transform: none !important;
+    }
+    .btn-outline:hover {
+      transform: none !important;
+    }
+  }
   
   .btn-gradient:hover::before {
     left: 100%;
